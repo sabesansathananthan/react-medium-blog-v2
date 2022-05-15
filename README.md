@@ -8,7 +8,7 @@ Aim of this project is embed Medium as a blog on your React website.
 <p align="center">
    <a href="https://github.com/sabesansathananthan/react-medium-blog-v2">
       <img alt="Framework: React" src="https://badges.aleen42.com/src/react.svg" />
-    </a><a href="https://github.com/sabesansathananthan/react-medium-blog-v2/blob/master/.github/LICENSE">
+    </a><a href="https://github.com/sabesansathananthan/react-medium-blog-v2/blob/main/.github/LICENSE">
       <img alt="licence" src="https://img.shields.io/github/license/sabesansathananthan/react-medium-blog-v2" />
     </a><a href="https://github.com/sabesansathananthan/react-medium-blog-v2">
       <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/sabesansathananthan/react-medium-blog-v2" />
