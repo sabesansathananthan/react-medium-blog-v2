@@ -23,7 +23,7 @@ Aim of this project is embed Medium as a blog on your React website.
 ## 🛠️ Built with
 
 - [React JS](https://reactjs.org/) - Front-End JavaScript library
-- [Shards React](https://designrevision.com/docs/shards-react/getting-started) - React UI Framework
+- [Material UI](https://material-ui.com/) - React UI Framework
 
 ## Installation
 
