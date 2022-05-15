@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+<h1 align='center'>React Medium Blog v2</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+Aim of this project is embed Medium as a blog on your React website.
+</p>
+<img alt="UI" src="./docs/screenhot.png"  align='center'/>
+<br />
+<p align="center">
+   <a href="https://github.com/sabesansathananthan/react-medium-blog-v2">
+      <img alt="Framework: React" src="https://badges.aleen42.com/src/react.svg" />
+    </a><a href="https://github.com/sabesansathananthan/react-medium-blog-v2/blob/master/.github/LICENSE">
+      <img alt="licence" src="https://img.shields.io/github/license/sabesansathananthan/react-medium-blog-v2" />
+    </a><a href="https://github.com/sabesansathananthan/react-medium-blog-v2">
+      <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/sabesansathananthan/react-medium-blog-v2" />
+    </a><a href="https://github.com/sabesansathananthan/react-medium-blog-v2">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/sabesansathananthan/react-medium-blog-v2?color=ff69b4" />
+    </a><a href="https://twitter.com/intent/tweet?text=Wow,%20I%20used%20React-medium-blog.%20That%20is%20excellent.%20Thank%20you%20@TheSabesan">
+      <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTheSabesan" />
+    </a>
+      
+</p>
 
-## Available Scripts
+## 🛠️ Built with
 
-In the project directory, you can run:
+- [React JS](https://reactjs.org/) - Front-End JavaScript library
+- [Shards React](https://designrevision.com/docs/shards-react/getting-started) - React UI Framework
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To setup the app for development on your local machine, please follow the instructions below:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repo to your machine
 
-### `npm test`
+   ```bash
+   git clone https://github.com/sabesansathananthan/react-medium-blog-v2.git
+   cd React-Medium-Blog
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install packages
 
-### `npm run build`
+   If you use `npm`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   or
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   If you use `yarn`
 
-### `npm run eject`
+   ```bash
+   yarn
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Change username
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   Use your Medium username👤 instead of `Sabesan96`. in [App.js](./src/App.js)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```JavaScript
+   const result = await axios(
+        "https://advanced-medium-api.herokuapp.com/advanced/customized/user/sabesan96"
+      );
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Run the development server
 
-## Learn More
+   If you use `npm`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   or
 
-### Code Splitting
+   If you use `yarn`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   yarn start
+   ```
 
-### Analyzing the Bundle Size
+5. Visit <http://localhost:3000>
+   <br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How does the category tag work?
 
-### Making a Progressive Web App
+**How can we choose a particular category tag among a medium post’s 5 category tags?**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I proposed a method for that. In a particular medium post which category tag was tagged the highest time in last 10 medium posts is suitable for that post.
+<br />
 
-### Advanced Configuration
+## [Live Demo](https://react-medium-blog.web.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Don't forget to give a star :star: for this repo :slightly_smiling_face:
 
-### Deployment
+## Similar Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [React-Medium-Blog](https://github.com/sabesansathananthan/React-Medium-Blog)
+- [Material-UI-Medium-Blog](https://github.com/sabesansathananthan/material-ui-medium-blog)
+- [React-Dev.to-Blog](https://github.com/sabesansathananthan/react-dev.to-blog)
 
-### `npm run build` fails to minify
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](./.github/LICENSE) file for details
