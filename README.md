@@ -62,7 +62,18 @@ To setup the app for development on your local machine, please follow the instru
       );
    ```
 
-4. Run the development server
+4. Change active hours
+   Active hours set as morning 5.00 am to night 8.00 pm. You could change the active hours in [PostCard.js](./src/Components/PostCard.js). If your time zone is not Indian Standard Time IST Change the ISTOffset value.<br>
+   Calculation for Finding Offset <br>
+   For me it is IST. Therefore, +5:30. <br>
+   Offset = +5 x 60 + 30
+
+   ```JavaScript
+   const ISTOffset = 330; // IST offset UTC +5:30 🕠
+   const isOnline = ISTTime.getHours() >= 5 && ISTTime.getHours() <= 20;
+   ```
+
+5. Run the development server
 
    If you use `npm`
 
@@ -78,7 +89,7 @@ To setup the app for development on your local machine, please follow the instru
    yarn start
    ```
 
-5. Visit <http://localhost:3000>
+6. Visit <http://localhost:3000>
    <br />
 
 ## How does the category tag work?
